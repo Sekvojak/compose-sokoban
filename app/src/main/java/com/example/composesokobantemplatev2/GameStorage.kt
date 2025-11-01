@@ -10,7 +10,7 @@ fun saveProgress(context: Context, levelIndex: Int, tiles: List<Int>, moves: Int
 
     prefs.edit {
         putString("tiles_$levelIndex", tiles.joinToString(",")) // mapa
-        putInt("moves_$levelIndex", moves) // tahy
+        putInt("moves_$levelIndex", moves) // tahy hraca
     }
 }
 
