@@ -9,8 +9,8 @@ fun saveProgress(context: Context, levelIndex: Int, tiles: List<Int>, moves: Int
     val prefs = context.getSharedPreferences(PREF, Context.MODE_PRIVATE)
 
     prefs.edit {
-        putString("tiles_$levelIndex", tiles.joinToString(","))
-        putInt("moves_$levelIndex", moves)
+        putString("tiles_$levelIndex", tiles.joinToString(",")) // mapa
+        putInt("moves_$levelIndex", moves) // tahy
     }
 }
 
